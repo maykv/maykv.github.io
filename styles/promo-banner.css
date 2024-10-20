@@ -1,0 +1,68 @@
+.promo-banner {
+    display: flex; /* Flexbox로 설정 */
+    justify-content: space-between; /* 공간을 균등하게 배분 */
+    align-items: flex-start; /* 상단 정렬 */
+    padding: 20px; /* 여백 */
+    max-width: 800px; /* 최대 너비 설정 (필요에 따라 조정) */
+    margin: 0 auto; /* 수평 중앙 정렬 */
+}
+
+
+.product-image img {
+    max-width: 100%; /* 이미지가 div를 넘지 않도록 설정 */
+    height: auto; /* 비율 유지 */
+    border-radius: 5px; /* 이미지 둥근 모서리 */
+}
+
+.product-catchphrase {
+    flex: 1; /* 남은 공간을 차지하도록 설정 */
+    margin-left: 20px; /* 이미지와 간격을 두기 위해 여백 */
+}
+
+.product-catchphrase h2 {
+    margin: 0; /* 기본 마진 제거 */
+}
+
+
+.watch-video {
+    margin-top: 10px; /* 상단 여백 */
+    display: flex; /* 플렉스 박스로 설정 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.video-thumbnail {
+    position: relative; /* 자식 요소의 절대 위치 설정을 위해 */
+    width: 80px; /* 4:3 비율을 유지하기 위해 적절한 너비 설정 */
+    height: 60px; /* 4:3 비율에 맞는 높이 설정 */
+    background-color:#000; /* 배경 이미지 설정 */
+    background-size: cover; /* 배경 이미지가 div를 꽉 채우도록 설정 */
+    background-position: center; /* 배경 이미지 중앙 정렬 */
+    margin-right: 20px; /* 오른쪽 여백 */
+}
+
+.play-button {
+    position: absolute; /* 썸네일 위에 위치하도록 설정 */
+    top: 50%; /* 수직 중앙 정렬 */
+    left: 50%; /* 수평 중앙 정렬 */
+    transform: translate(-50%, -50%); /* 중앙으로 이동 */
+    background-color: #007bff; /* 파란색 배경 */
+    color: white; /* 텍스트 색상 */
+    border: none; /* 테두리 제거 */
+    border-radius: 50%; /* 원형 버튼 */
+    width: 40px; /* 버튼 너비 */
+    height: 40px; /* 버튼 높이 */
+    cursor: pointer; /* 커서 변경 */
+    font-size: 20px; /* 폰트 크기 */
+    transition: background-color 0.3s; /* 배경 색상 변화 애니메이션 */
+}
+
+.play-button:hover {
+    background-color: #0056b3; /* 호버 시 배경 색상 변경 */
+}
+
+.view-product {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #007bff; /* 텍스트 색상 */
+    font-size: 16px; /* 폰트 크기 */
+
+}

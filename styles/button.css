@@ -1,0 +1,54 @@
+.play-button {
+    position: absolute; /* 썸네일 위에 위치하도록 설정 */
+    top: 50%; /* 수직 중앙 정렬 */
+    left: 50%; /* 수평 중앙 정렬 */
+    transform: translate(-50%, -50%); /* 중앙으로 이동 */
+    background-color: #007bff; /* 파란색 배경 */
+    color: white; /* 텍스트 색상 */
+    border-radius: 50%; /* 원형 버튼 */
+    width: 20px; /* 버튼 너비 조정 (반으로 줄임) */
+    height: 20px; /* 버튼 높이 조정 (반으로 줄임) */
+    cursor: pointer; /* 커서 변경 */
+    font-size: 12px; /* 폰트 크기 */
+    border: 0.5px solid #4da3ff; /* 얇은 파란색 테두리 추가 */
+    display: flex; /* 중앙 정렬을 위해 플렉스 사용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    transition: background-color 0.3s, transform 0.3s; /* 배경 색상과 크기 변화 애니메이션 */
+}
+
+.view-product {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #007bff; /* 텍스트 색상 */
+    font-size: 16px; /* 폰트 크기 */
+    margin-right: 4px; /* 왼쪽 여백 */
+}
+
+/* 버튼 컨테이너 스타일 */
+.button-container {
+    display: flex; /* 플렉스 박스로 설정 */
+    justify-content: space-between; /* 버튼 간격을 균등하게 분배 */
+    padding: 20px; /* 여백 */
+    border-radius: 5px; /* 둥근 모서리 */
+}
+
+.action-button {
+    flex: 1; /* 각 버튼이 동일한 너비를 차지하도록 설정 */
+    margin: 0 3.2px; /* 좌우 간격 설정 */
+    padding: 15px; /* 버튼 패딩 */
+    background: linear-gradient(to bottom, #f7f7f5 0%, #d4d4d4 100%); /* 세로 그라디언트 */
+    color: #333; /* 텍스트 색상 */
+    border: 1px solid #696969; /* 얇은 회색 테두리 */
+    border-radius: 5px; /* 둥근 모서리 */
+    cursor: pointer; /* 커서 변경 */
+    font-size: 16px; /* 폰트 크기 */
+    display: flex; /* 플렉스 사용하여 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    flex-direction: column; /* 세로 방향으로 배치 */
+}
+
+.action-button:hover {
+    background: linear-gradient(to bottom, #c2c2c2 0%, #828282 100%); /* 세로 그라디언트 */
+    color: #fff; /* 텍스트 색상 */
+}
