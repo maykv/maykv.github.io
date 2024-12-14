@@ -7,19 +7,64 @@
     <title>MAYKV</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
         body {
-            background-image: linear-gradient(180deg, #b8fff7, #d1ffa3);
-            background-repeat: no-repeat; /* 이 줄을 추가하여 배경이 반복되지 않도록 설정 */
-            background-size: cover; /* 이 줄을 추가하여 배경이 화면 크기에 맞게 조정되도록 설정 */
-            min-height: 100vh; /* 수정된 부분 */
+            font-family: "Noto Serif KR", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: black;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: gradient-animation 10s infinite alternate;
+            background-size: 400% 400%; /* 부드러운 전환을 위해 배경 크기를 확장 */
         }
-        body {
-          font-family: "Noto Serif KR", serif;
-          font-weight: 400;
-          font-style: normal;
-          color: black;
+
+        @keyframes gradient-animation {
+            0% {
+                background-image: linear-gradient(180deg, lightgreen, #338033);
+            }
+            25% {
+                background-image: linear-gradient(180deg, #b8fff7, #d1ffa3);
+            }
+            50% {
+                background-image: linear-gradient(180deg, white, gray);
+            }
+            75% {
+                background-image: linear-gradient(180deg, lightpink, yellow);
+            }
+            100% {
+                background-image: linear-gradient(180deg, lightgreen, #338033);
+            }
+        }
+
+        h2 {
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .안녕 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        hr {
+            margin: 1rem 0;
         }
     </style>
+</head>
 <body>
     <h2>maykv</h2>
     <div class="안녕">
@@ -44,5 +89,6 @@
         <hr>
         <b>Note</b><br>
         <a href="https://maykv.github.io/2011applecopy/">2011 애플 사이트 카피</a> (2024)<br>
+    </div>
 </body>
 </html>
